@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,12 +10,12 @@ html{
 }
 
 body{
-font-family: 'Fredoka', sans-serif;
+font-family: 'Capriola', sans-serif;
 min-height: 100%;
 }
 
 .grid-container > *{
-    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    /*box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);*/
     border-radius: 4px;
     padding: 10px;
     text-align: center;
@@ -29,7 +29,7 @@ min-height: 100%;
 
 .navbar{
     grid-area: navbar;
-    background: linear-gradient(180deg, rgba(249,212,255,1) 0%, rgba(233,185,255,1) 100%);
+    background: linear-gradient(180deg, rgba(249,212,255,1) 0%, rgba(214,125,255,1) 100%);
     padding: 10px;
     display: flex;
     flex-flow: row wrap;
@@ -60,12 +60,13 @@ a{
 
 .main{
     grid-area: main;
-    background-color: pink; 
+    background-color: #fff; 
 }
 
 img{
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 425px;
+    max-height: 425px;
+    border-radius:5%;
 }
 
 .main-items {
@@ -99,7 +100,7 @@ img{
 
 .grid-container{
     display: grid;
-    gap: 10px;
+    /*gap: 10px;*/
     grid-template: 
          "header" 100px
          "navbar" 50px
