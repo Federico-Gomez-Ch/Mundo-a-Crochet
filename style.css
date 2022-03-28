@@ -60,7 +60,7 @@ a{
 
 .main{
     grid-area: main;
-    background-color: #fff; 
+    background-color: rgb(255, 255, 255); 
 }
 
 img{
