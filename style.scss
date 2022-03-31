@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+
+body{
+font-family: 'Capriola', sans-serif;
+min-height: 100%;
+}
+
+.grid-container > *{
+    /*box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);*/
+    border-radius: 4px;
+    text-align: center;
+}
+
+.main-subtitulo{
+    padding-top: 10px;
+}
+
+.header{
+    grid-area: header;
+    background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,199,210,1) 100%); 
+
+}
+
+.navbar{
+    grid-area: navbar;
+    background: linear-gradient(180deg, rgba(249,212,255,1) 0%, rgba(233,185,255,1) 100%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/*
+.nav-button{
+    display: flex;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+*/   
+a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+
+.sidebar{
+    grid-area:sidebar;
+    background-color: #ffecee;
+}
+
+.main{
+    grid-area: main;
+    background-color: #fdfbf9; 
+}
+
+img{
+    max-width: 425px;
+    max-height: 425px;
+    border-radius:5%;
+}
+
+.main-items {
+      display: inline-block;
+      padding: 5px;
+      justify-content:space-around;
+}
+
+.ccomprar{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    
+
+}
+
+.texto-carrito{
+    font-size: 20px;
+}
+
+.formulario-contacto{
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+}
+.footer{
+    grid-area: footer;
+    background-color: #f8f9fa; 
+}
+
+.footertext{
+    color:black;
+}
+
+.grid-container{
+    display: grid;
+    grid-template: 
+         "header" auto
+         "main" auto
+         "sidebar" 100px
+         "footer" 100px;
+
+}
+
+@media (min-width:600px) {
+    .grid-container{
+        grid-template: 
+        "header header" auto
+         "sidebar main" auto
+           "footer footer" 100px 
+            200px auto; 
+    }
+    img{
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media (min-width:900px) {
+    .grid-container{
+        grid-template: 
+        "header header header" auto
+         "main  main sidebar " auto
+           "footer footer footer" 100px /
+            200px auto 200px; }
+        }
