@@ -9,6 +9,7 @@ html{
     height: 100%;
 }
 
+
 body{
 font-family: 'Capriola', sans-serif;
 min-height: 100%;
@@ -17,20 +18,22 @@ min-height: 100%;
 .grid-container > *{
     /*box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);*/
     border-radius: 4px;
-    padding: 10px;
     text-align: center;
+}
+
+.main-subtitulo{
+    padding-top: 10px;
 }
 
 .header{
     grid-area: header;
     background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,199,210,1) 100%); 
-    padding: 30px;
+
 }
 
 .navbar{
     grid-area: navbar;
     background: linear-gradient(180deg, rgba(249,212,255,1) 0%, rgba(233,185,255,1) 100%);
-    /*padding: 10px;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -104,10 +107,8 @@ img{
 
 .grid-container{
     display: grid;
-    /*gap: 10px;*/
     grid-template: 
-         "header" 100px
-         "navbar" 50px
+         "header" auto
          "main" auto
          "sidebar"100px
          "footer" 100px;
@@ -117,19 +118,21 @@ img{
 @media (min-width:600px) {
     .grid-container{
         grid-template: 
-        "header header" 100px
-         "navbar navbar" 50px
+        "header header" auto
          "sidebar main" auto
            "footer footer" 100px /
             200px auto; 
+    }
+    img{
+        width: 100%;
+        padding: 5px;
     }
 }
 
 @media (min-width:900px) {
     .grid-container{
         grid-template: 
-        "header header header" 100px
-         "navbar navbar navbar" 50px
+        "header header header" auto
          "main  main sidebar " auto
            "footer footer footer" 100px /
             200px auto 200px; }
