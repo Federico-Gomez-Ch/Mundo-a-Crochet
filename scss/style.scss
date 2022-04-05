@@ -15,130 +15,26 @@ html{
 }
 
 
-body{
-font-family: 'Capriola', sans-serif;
-min-height: 100%;
-}
+@import '_grid-container';
 
-.grid-container > *{
-    /*box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);*/
-    border-radius: 4px;
-    text-align: center;
-}
+@import '_header';
 
-.main-subtitulo{
-    padding-top: 10px;
-}
+@import 'body';
 
-.header{
-    grid-area: header;
-    background: $backgroundheader;
+@import 'navbar';
 
-}
+@import '_sidebar';
 
-.navbar{
-    grid-area: navbar;
-    background: $backgroundnav;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    flex-direction: row;
-}
+@import '_main';
 
-/*
-.nav-button{
-    display: flex;
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 10%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-*/   
-a{
-    text-decoration: none;
-    color:black;
-    
-}
+@import '_images';
 
+@import '_ccomprar';
 
-.sidebar{
-    grid-area:sidebar;
-    background-color: $backgroundsidebar
-}
+@import 'text';
 
-.main{
-    grid-area: main;
-    background-color: $backgroundmain
-}
+@import '_form-contact';
 
-img{
-    max-width: 425px;
-    max-height: 425px;
-    border-radius:5%;
-}
+@import '_footer';
 
-.main-items {
-      display: inline-block;
-      padding: 5px;
-      justify-content:space-around;
-}
-
-.ccomprar{
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    
-
-}
-
-.texto-carrito{
-    font-size: 20px;
-}
-
-.formulario-contacto{
-    display:grid;
-    align-items: center;
-    justify-items: center;
-    padding-top: 20px;
-}
-.footer{
-    grid-area: footer;
-    background-color:  $backgroundfooter
-}
-
-.footertext{
-    color:black;
-}
-
-.grid-container{
-    display: grid;
-    grid-template: 
-         "header" auto
-         "main" auto
-         "sidebar" 100px
-         "footer" 100px;
-
-}
-
-@media (min-width:400px) {
-    .grid-container{
-        grid-template: 
-        "header header" auto
-         "sidebar main" auto
-           "footer footer" 100px 
-            200px auto; 
-    }
-    img{
-        width: 100%;
-        padding: 5px;
-    }
-}
-
-@media (min-width:900px) {
-    .grid-container{
-        grid-template: 
-        "header header header" auto
-         "main  main sidebar " auto
-           "footer footer footer" 100px /
-            200px auto 200px; }
-        }
+@import 'mediasq';

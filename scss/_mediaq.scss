@@ -1,0 +1,23 @@
+
+@media (min-width:400px) {
+    .grid-container{
+        grid-template: 
+        "header header" auto
+         "sidebar main" auto
+           "footer footer" 100px 
+            200px auto; 
+    }
+    img{
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media (min-width:900px) {
+    .grid-container{
+        grid-template: 
+        "header header header" auto
+         "main  main sidebar " auto
+           "footer footer footer" 100px /
+            200px auto 200px; }
+        }

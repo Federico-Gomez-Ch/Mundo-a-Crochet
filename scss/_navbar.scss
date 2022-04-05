@@ -1,0 +1,8 @@
+.navbar{
+    grid-area: navbar;
+    background: $backgroundnav;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}

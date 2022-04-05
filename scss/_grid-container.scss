@@ -1,0 +1,14 @@
+.grid-container > *{
+    /*box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);*/
+    border-radius: 4px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template: 
+         "header" auto
+         "main" auto
+         "sidebar" 100px
+         "footer" 100px;
+
+}
