@@ -1,14 +1,15 @@
 .main{
     grid-area: main;
-    background-color: $backgroundmain
-}
+    background-color: $backgroundmain;
 
-.main-items {
+    &-subtitulo{
+        padding-top: 10px;
+    }
+
+&-items {
     display: inline-block;
     padding: 5px;
     justify-content:space-around;
-}
 
-.main-subtitulo{
-    padding-top: 10px;
+}
 }

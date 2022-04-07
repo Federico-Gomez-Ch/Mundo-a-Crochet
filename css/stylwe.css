@@ -19,7 +19,10 @@ html {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  grid-template: "header" auto "main" auto "sidebar" 100px "footer" 100px;
+  grid-template: "header" auto
+ "main" auto
+ "sidebar" 100px
+ "footer" 100px;
 }
 
 .header {
@@ -61,11 +64,11 @@ body {
   background-color: #fdfbf9;
 }
 
-.main-subtitulo {
+.main-grid-subtitulo {
   padding-top: 10px;
 }
 
-.main-items {
+.main-grid-items {
   display: inline-block;
   padding: 5px;
   -ms-flex-pack: distribute;
@@ -109,7 +112,10 @@ img {
 
 @media (min-width: 400px) {
   .grid-container {
-    grid-template: "header header" auto "sidebar main" auto "footer footer" 100px  200px auto;
+    grid-template: "header header" auto
+ "sidebar main" auto
+ "footer footer" 100px 
+ 200px auto;
   }
   img {
     width: 100%;
@@ -119,7 +125,10 @@ img {
 
 @media (min-width: 900px) {
   .grid-container {
-    grid-template: "header header header" auto "main  main sidebar " auto "footer footer footer" 100px / 200px auto 200px;
+    grid-template: "header header header" auto
+ "main  main sidebar " auto
+ "footer footer footer" 100px /
+ 200px auto 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
