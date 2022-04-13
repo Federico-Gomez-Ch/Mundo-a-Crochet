@@ -4,6 +4,15 @@ $backgroundheader:linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,199,210
 $backgroundsidebar:#ffecee;
 $backgroundmain:#fdfbf9; 
 $backgroundfooter:#f8f9fa;
+/*MAP*/
+$img-map: (
+  mx-width:425px,
+  mx-height:425px,
+  br-radius:5%
+
+);
+
+
 *{
     box-sizing: border-box;
     margin: 0;

@@ -1,6 +1,5 @@
 img{
-    max-width: 425px;
-    max-height: 425px;
-    border-radius:5%;
+   max-width: map-get($img-map, mx-width);
+   max-height: map-get($img-map, mx-height);
+   border-radius: map-get($img-map, br-radius);
 }
-
