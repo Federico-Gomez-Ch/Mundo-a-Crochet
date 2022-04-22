@@ -2,13 +2,14 @@
     /*box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);*/
     border-radius: 4px;
     text-align: center;
+    align-items: center;
 }
 .grid-container{
     display: grid;
     grid-template: 
-         "header" auto
+         "header" 100px
          "main" auto
-         "sidebar" 100px
+        /* "sidebar" 100px  */
          "footer" 100px;
 
 }

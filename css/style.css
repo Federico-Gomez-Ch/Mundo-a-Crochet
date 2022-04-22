@@ -11,22 +11,28 @@ html {
   height: 100%;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 .grid-container > * {
   /*box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);*/
   border-radius: 4px;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid-container {
   display: -ms-grid;
   display: grid;
-  grid-template: "header" auto "main" auto "sidebar" 100px "footer" 100px;
+  grid-template: "header" 100px "main" auto "footer" 100px;
 }
 
 .header {
   grid-area: header;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f6f6f6), to(#ffc7d2));
-  background: linear-gradient(0deg, #f6f6f6 0%, #ffc7d2 100%);
+  background: #EDDCD2;
 }
 
 body {
@@ -35,9 +41,8 @@ body {
 }
 
 .navbar {
-  grid-area: navbar;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9d4ff), to(#e9b9ff));
-  background: linear-gradient(180deg, #f9d4ff 0%, #e9b9ff 100%);
+  grid-area: nav-possition;
+  background: #EDDCD2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,12 +59,12 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #ffecee;
+  background-color: #FFF1E6;
 }
 
 .main {
   grid-area: main;
-  background-color: #fdfbf9;
+  background-color: #FFF;
 }
 
 .main-subtitulo {
@@ -97,11 +102,12 @@ img {
           align-items: center;
   justify-items: center;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer {
   grid-area: footer;
-  background-color: #f8f9fa;
+  background-color: #d5d0cd;
 }
 
 .footertext {
@@ -110,7 +116,7 @@ img {
 
 @media (min-width: 400px) {
   .grid-container {
-    grid-template: "header header" auto "sidebar main" auto "footer footer" 100px  200px auto;
+    grid-template: "header header" auto "main main" auto "footer footer" 100px  200px auto;
   }
   img {
     width: 100%;
@@ -120,7 +126,7 @@ img {
 
 @media (min-width: 900px) {
   .grid-container {
-    grid-template: "header header header" auto "main  main sidebar " auto "footer footer footer" 100px / 200px auto 200px;
+    grid-template: "header header header" 120px "main main main "  auto "footer footer footer" 100px / 200px auto 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */

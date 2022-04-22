@@ -2,7 +2,7 @@
     .grid-container{
         grid-template: 
         "header header" auto
-         "sidebar main" auto
+         "main main" auto
            "footer footer" 100px 
             200px auto; 
     }
@@ -15,8 +15,8 @@
 @media (min-width:900px) {
     .grid-container{
         grid-template: 
-        "header header header" auto
-         "main  main sidebar " auto
+        "header header header" 120px
+         "main main main "  auto
            "footer footer footer" 100px /
             200px auto 200px; }
         }

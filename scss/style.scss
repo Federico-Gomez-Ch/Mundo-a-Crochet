@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
-$backgroundnav:linear-gradient(180deg, rgba(249,212,255,1) 0%, rgba(233,185,255,1) 100%);
-$backgroundheader:linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,199,210,1) 100%); 
-$backgroundsidebar:#ffecee;
-$backgroundmain:#fdfbf9; 
-$backgroundfooter:#f8f9fa;
+$backgroundnav:#EDDCD2;
+$backgroundheader:#EDDCD2; 
+$backgroundsidebar:#FFF1E6;
+$backgroundmain:#FFF; 
+$backgroundfooter:#d5d0cd;
 /*MAP*/
 $img-map: (
   mx-width:425px,
@@ -21,6 +21,10 @@ $img-map: (
 
 html{
     height: 100%;
+}
+
+iframe{
+  max-width: 100%;
 }
 
 @import '_grid-container';
