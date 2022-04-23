@@ -27,7 +27,7 @@ iframe {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  grid-template: "header" 100px "main" auto "footer" 100px;
+  grid-template: "header" auto "main" auto "footer" 100px;
 }
 
 .header {
@@ -41,7 +41,7 @@ body {
 }
 
 .navbar {
-  grid-area: nav-possition;
+  grid-area: navbar;
   background: #EDDCD2;
   display: -webkit-box;
   display: -ms-flexbox;

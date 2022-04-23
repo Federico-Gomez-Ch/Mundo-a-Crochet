@@ -7,7 +7,7 @@
 .grid-container{
     display: grid;
     grid-template: 
-         "header" 100px
+         "header" auto
          "main" auto
         /* "sidebar" 100px  */
          "footer" 100px;
