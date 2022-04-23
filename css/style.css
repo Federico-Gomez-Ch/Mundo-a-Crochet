@@ -27,7 +27,7 @@ iframe {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  grid-template: "header" auto "main" auto "footer" 100px;
+  grid-template: "header" 100px "main" auto "footer" 100px;
 }
 
 .header {
