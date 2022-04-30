@@ -76,6 +76,11 @@ body {
   padding: 5px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  overflow: hidden;
+}
+
+.main-grid {
+  overflow: hidden;
 }
 
 img {
@@ -128,5 +133,24 @@ img {
   .grid-container {
     grid-template: "header header header" 120px "main main main "  auto "footer footer footer" 100px / 200px auto 200px;
   }
+}
+
+.main-grid {
+  overflow: hidden;
+}
+
+.items {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.items:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */
