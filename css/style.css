@@ -73,20 +73,18 @@ body {
 
 .main-items {
   display: inline-block;
-  padding: 5px;
+  margin: 5px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   overflow: hidden;
-}
-
-.main-grid {
-  overflow: hidden;
+  border-radius: 5%;
 }
 
 img {
   max-width: 425px;
   max-height: 425px;
   border-radius: 5%;
+  transition: 5s;
 }
 
 .ccomprar {
@@ -121,7 +119,10 @@ img {
 
 @media (min-width: 400px) {
   .grid-container {
-    grid-template: "header header" auto "main main" auto "footer footer" 100px  200px auto;
+    grid-template: "header header" auto
+ "main main" auto
+ "footer footer" 100px 
+ 200px auto;
   }
   img {
     width: 100%;
@@ -131,7 +132,10 @@ img {
 
 @media (min-width: 900px) {
   .grid-container {
-    grid-template: "header header header" 120px "main main main "  auto "footer footer footer" 100px / 200px auto 200px;
+    grid-template: "header header header" 120px
+ "main main main "  auto
+ "footer footer footer" 100px /
+ 200px auto 200px;
   }
 }
 
