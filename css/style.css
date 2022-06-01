@@ -73,7 +73,7 @@ body {
 
 .main-items {
   display: inline-block;
-  padding: 5px;
+  margin: 5px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   overflow: hidden;
